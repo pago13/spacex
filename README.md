@@ -1,2 +1,2 @@
 # spacex
-A SpaceX website about their failures, done for a school project.
+A website about the Falcon 9 SpaceX failures, done for a school project.
