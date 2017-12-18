@@ -5,20 +5,16 @@
 ********************/
 
 
-body,
-html
-{
+body, html {
   overflow: hidden;
 } 
 
-body
-{
+body {
   background: #000000;
   margin: 0;
 }
 
-canvas
-{
+canvas {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,6 +22,8 @@ canvas
 
 .logo {
   position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 /********************
@@ -36,7 +34,6 @@ canvas
 
 .global-timeline .global-line {
   position: relative;
-  z-index: 1;
   left: 10%;
   width: 1px;
   height: 100vh;
@@ -45,14 +42,66 @@ canvas
 
 .modules {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  height: 80%;
-  width: 100px;
-  background-color: red;
+  height: 90%;
 }
 
 .modules > div {
+  width: 10px;
+  height: 10px;
+  margin: 27px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
 
+.modules > div:hover {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/********************
+
+    ACTUAL POSITION
+
+********************/
+
+.actual-position .spaceship {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  animation-name: hovering;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes hovering {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(3px); }
+  100% { transform: translateY(0px); }
+}
+
+/********************
+
+    SOCIAL MEDIAS
+
+********************/
+
+.social-medias {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+}
+
+.social-medias > div {
+  display: inline-block;
+  margin: 5px;
 }
