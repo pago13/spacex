@@ -1,12 +1,20 @@
+/********************
+
+        GENERAL
+
+********************/
+
+
 body,
 html
 {
-  overflow-x: hidden;
+  overflow: hidden;
 } 
 
 body
 {
-    background: #000000;
+  background: #000000;
+  margin: 0;
 }
 
 canvas
@@ -15,3 +23,36 @@ canvas
   top: 0;
   left: 0;
 } 
+
+.logo {
+  position: absolute;
+}
+
+/********************
+
+    GLOBAL TIMELINE
+
+********************/
+
+.global-timeline .global-line {
+  position: relative;
+  z-index: 1;
+  left: 10%;
+  width: 1px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modules {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80%;
+  width: 100px;
+  background-color: red;
+}
+
+.modules > div {
+
+}
