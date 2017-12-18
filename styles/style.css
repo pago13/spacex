@@ -49,19 +49,16 @@ canvas {
 }
 
 .modules > div {
-  width: 10px;
-  height: 10px;
-  margin: 27px;
+  width: 15px;
+  height: 15px;
+  margin: 22px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.7);
-  transition-property: opacity;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
+  transition: transform 0.15s ease-in-out;
 }
 
 .modules > div:hover {
-  width: 15px;
-  height: 15px;
+  transform: scale(2);
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -103,5 +100,17 @@ canvas {
 
 .social-medias > div {
   display: inline-block;
-  margin: 5px;
+  margin: 7px;
+  opacity: 0.7;
+  transition: transform 0.15s ease-in-out;
+  will-change: transform;
+}
+
+.social-medias > div:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+a:visited {
+  color: white;
 }
