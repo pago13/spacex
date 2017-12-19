@@ -7,7 +7,7 @@ const stars = []
 const resize = () =>
 {
   $canvas.width = window.innerWidth
-  $canvas.height = 13800
+  $canvas.height = window.innerHeight*15
 }
 
   window.addEventListener('resize', resize)
