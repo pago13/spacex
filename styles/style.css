@@ -67,6 +67,10 @@ canvas {
 
 .modules > div p {
   display: none;
+  padding-left: 20px;
+  white-space: nowrap;
+  font-size: 7px;
+  line-height: 17px;
 }
 
 .modules > div:hover p {
@@ -126,7 +130,7 @@ canvas {
 }
 
 .informations .details .details-content {
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   overflow: hidden;
   height: 100%;
 }
@@ -135,13 +139,11 @@ canvas {
   font-family: "anton", sans-serif;
   font-size: 24px;
   letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 .informations .details .details-content p {
-  height: 80%;
-  overflow: hidden;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 75%;
   font-size: 14px;
   text-align: justify;
   line-height: 20px;
@@ -157,24 +159,32 @@ canvas {
 }
 
 .informations .twitter-feed {
-  height: 49%;
+  height: 55%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid;
   border-radius: 5px;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
-.informations .twitter-feed .tweet-content blockquote {
-  margin: 0;
+.informations .twitter-feed .tweet-content twitterwidget {
+  margin-top: -10px;
 }
 
 .informations .video-archives {
-  height: 49%;
+  position: relative;
+  height: 40%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid;
   border-radius: 5px;
+}
+
+.informations .video-archives .video-archives-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /********************
