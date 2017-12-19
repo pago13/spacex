@@ -81,12 +81,19 @@ canvas {
 
 .actual-position .spaceship {
   position: absolute;
-  top: 10%;
+  height: 100vh;
+  top: 0;
   left: 25%;
   animation-name: hovering;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+.actual-position .spaceship img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @keyframes hovering {
