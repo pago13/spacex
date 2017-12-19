@@ -7,7 +7,7 @@ const stars = []
 const resize = () =>
 {
   $canvas.width = window.innerWidth
-  $canvas.height = window.innerHeight*15
+  $canvas.height = window.innerHeight
 }
 
   window.addEventListener('resize', resize)
@@ -17,7 +17,7 @@ const resize = () =>
 const space = () =>
 {
   context.beginPath() 
-  context.rect(0, 0, $canvas.width, ($canvas.height/15)*4)
+  context.rect(0, 0, $canvas.width, ($canvas.height))
   context.fillStyle = ' rgba(11, 11, 11, 1)'
   context.fill()
 
@@ -29,7 +29,7 @@ const starsFunction = () =>
   {
     context.fillStyle= ' rgba(255, 255, 255, 1)'
     let x = (Math.random() * ($canvas.width))
-    let y = (Math.random() * ($canvas.height/15)*4)
+    let y = (Math.random() * ($canvas.height))
     stars[i]= x
     stars[i+1]= y
     context.beginPath()
@@ -44,7 +44,7 @@ const starsFunctionAnim = () =>
 {
   for (let i = 0; i < numberParticle*2; i++) 
   {
-    if(stars[i+1] >= ($canvas.height/15)*4-2)
+    if(stars[i+1] >= ($canvas.height))
     {
       stars[i+1] = 0
     }
