@@ -44,7 +44,7 @@ const starsFunctionAnim = () =>
 {
   for (let i = 0; i < numberParticle*2; i++) 
   {
-    if(stars[i+1] >= ($canvas.height))
+    if(stars[i+1] >= ($canvas.height)-2)
     {
       stars[i+1] = 0
     }
