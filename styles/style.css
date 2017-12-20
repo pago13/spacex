@@ -121,10 +121,10 @@ canvas {
 }
 
 .informations .details {
-  display: inline-block;
+  /* display: inline-block;
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid;
-  border-radius: 5px;
+  border-radius: 5px; */
   height: 100%;
   width: 50%;
 }
@@ -159,25 +159,31 @@ canvas {
 }
 
 .informations .twitter-feed {
+  position: relative;
   height: 55%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid;
-  border-radius: 5px;
+  border-radius: 5px; */
   margin-bottom: 5%;
 }
 
-.informations .twitter-feed .tweet-content twitterwidget {
-  margin-top: -10px;
+.informations .twitter-feed .twitter-content {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
+
 
 .informations .video-archives {
   position: relative;
   height: 40%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .informations .video-archives .video-archives-content {
